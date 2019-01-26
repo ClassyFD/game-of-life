@@ -1,0 +1,20 @@
+.Game {
+  width: 600px;
+  height: 650px;
+  border: #181818 3px solid;
+  border-radius: 10px;
+  margin: 20px auto;
+  background: #4d7eb6;
+  position: relative;
+}
+.Game > section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 562px;
+  margin: 15px auto;
+  border: 2px solid black;
+  padding-left: 1px;
+  padding-top: 1px;
+  background: black;
+  border-radius: 2px;
+}
