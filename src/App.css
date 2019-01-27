@@ -4,6 +4,11 @@
 .game-block {
   height: 15px;
   width: 15px;
-  background: white;
   border: 1px solid black;
+}
+.game-block-alive {
+  background-color: #73a9d7;
+}
+.game-block-dead {
+  background-color: #616161;
 }

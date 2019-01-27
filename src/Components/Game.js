@@ -5,20 +5,31 @@ class Game extends Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      blocks: []
     }
-    getBlocks.toggleBlock = this.toggleBlock.bind(this);
   }
-  toggleBlock = (axis1, axis2) => {
-    console.log('testing')
+
+  componentWillMount = () => {
+    this.setState({
+      blocks: getBlocks(this)
+    })
+  }
+
+  toggleBlock = (iAxis, jAxis) => {
+    console.log(iAxis)
+    console.log(jAxis)
+    this.state.blocks.map((blockEl)=>{
+      
+    })
   }
 
   render() {
-    const blocks = getBlocks();
     return (
       <main className="Game">
         <section>
-          {blocks}
+          {this.state.blocks.map((blockEl)=>{
+            return blockEl.alive? blockEl.aliveBlock : blockEl.deadBlock;
+          })}
         </section>
       </main>
     )
