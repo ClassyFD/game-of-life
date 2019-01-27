@@ -16,11 +16,17 @@ class Game extends Component {
   }
 
   toggleBlock = (iAxis, jAxis) => {
-    console.log(iAxis)
-    console.log(jAxis)
     this.state.blocks.map((blockEl)=>{
-      
+      if (iAxis === blockEl.iAxis && jAxis === blockEl.jAxis) {
+        console.log(blockEl)
+        if (blockEl.alive) {
+          blockEl.alive = false;
+        } else {
+          blockEl.alive = true;
+        }
+      }
     })
+    this.forceUpdate();
   }
 
   render() {
