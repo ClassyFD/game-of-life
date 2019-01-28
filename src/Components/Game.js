@@ -29,13 +29,20 @@ class Game extends Component {
     this.forceUpdate();
   }
 
+  playFrame = () => {
+    console.log(this.state.blocks);
+  }
+
   render() {
     return (
       <main className="Game">
-        <section>
+        <section className="game-map">
           {this.state.blocks.map((blockEl)=>{
             return blockEl.alive? blockEl.aliveBlock : blockEl.deadBlock;
           })}
+        </section>
+        <section className="game-button-container">
+          <button onClick={()=>this.playFrame()} className="game-next-button">Next</button>
         </section>
       </main>
     )
