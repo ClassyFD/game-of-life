@@ -27,18 +27,20 @@
   height: 30px;
   background: none;
   border-radius: 5px;
-  border: 2px solid #38a89d;
+  border: 2px solid #3cffec;
   box-shadow: 0px 0px 2px 1px black;
   cursor: pointer;
   color: black;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-  transition: background .3s;
-  -moz-transition: background .3s;
-  -o-transition: background .3s;
-  -webkit-transition: background .3s;
+  transition: background .3s, color .3s;
+  -moz-transition: background .3s, color .3s;
+  -o-transition: background .3s, color .3s;
+  -webkit-transition: background .3s, color .3s;
   outline: none;
+  text-transform: uppercase;
+  color: #00ffe5;
 }
 .game-next-button:hover {
-  background: #38a89d;
+  background: #3fd1c2;
+  color: black;
 }
