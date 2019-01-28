@@ -19,10 +19,11 @@
   border-radius: 2px;
 }
 .game-button-container {
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 20px;
+  display: flex;
 } 
-.game-next-button {
+.game-button {
   width: 100px;
   height: 30px;
   background: none;
@@ -39,8 +40,12 @@
   outline: none;
   text-transform: uppercase;
   color: #00ffe5;
+  margin-left: 10px;
 }
-.game-next-button:hover {
+.game-button:hover {
   background: #3fd1c2;
   color: black;
+}
+.game-rules-button {
+  margin-left: auto;
 }

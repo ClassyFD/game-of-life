@@ -1,0 +1,49 @@
+.Rules {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 0px 5px 1px black;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-family: Arial;
+  padding: 10px;
+  opacity: 1;
+  z-index: 5;
+  overflow: hidden;
+}
+.rules-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.rules-title {
+  font-size: 18px;
+}
+.rules-footer {
+  font-size: 14px;
+  text-align: right;
+}
+.rules-exit-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background .3s;
+  -moz-transition: background .3s;
+  -o-transition: background .3s;
+  -webkit-transition: background .3s;
+}
+.rules-exit-button:hover {
+  background: #3fd1c2;
+}
+.rules-shade {
+  position: fixed;
+}
